@@ -2,41 +2,71 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Inicio - Mi Tienda Musical</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inicio - Tienda de Música</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
 </head>
 <body>
-
+  <!-- Intro animado -->
   <div id="intro">
     <img src="images/logo.png" alt="Logo" />
   </div>
 
+  <!-- Header con logo y redes -->
   <header>
     <img src="images/logo.png" alt="Logo" class="logo" />
     <nav>
-      <a href="index.html" class="nav-link">Inicio</a>
-      <a href="tienda.html" class="nav-link">Tienda</a>
-      <a href="contacto.html" class="nav-link">Contacto</a>
+      <a href="index.html" class="nav-btn">Inicio</a>
+      <a href="tienda.html" class="nav-btn">Tienda</a>
+      <a href="contacto.html" class="nav-btn">Contacto</a>
     </nav>
     <div class="social-icons">
       <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://wa.me/XXXXXXXXXX" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
       <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
   </header>
 
+  <!-- Contenido principal -->
   <main>
     <div class="container">
-      <h1>Bienvenido a Nuestra Tienda de Instrumentos Musicales</h1>
-      <p>Ofrecemos productos y servicios de enseñanza musical personalizados.</p>
+      <h1>Bienvenidos a Nuestra Tienda de Instrumentos Musicales</h1>
+      <p>
+        Ofrecemos enseñanza personalizada de guitarra, piano y violín. Aprende
+        con expertos y mejora tu talento musical.
+      </p>
+
+      <section class="imagenes-inicio">
+        <img src="images/guitarra.jpg" alt="Guitarra" />
+        <img src="images/piano.jpg" alt="Piano" />
+        <img src="images/violin.jpg" alt="Violín" />
+      </section>
+
+      <section class="integrantes">
+        <h2>Integrantes del grupo</h2>
+        <ul>
+          <li>Erickson Acosta</li>
+          <li>Yenli Gómez</li>
+          <li>Otro Integrante</li>
+        </ul>
+      </section>
+
+      <a
+        href="matriz_do.fa.html"
+        target="_blank"
+        class="boton-do.fa"
+        >Matriz DOFA</a
+      >
     </div>
   </main>
 
   <footer>
-    &copy; 2025 Mi Tienda. Todos los derechos reservados.
+    &copy; 2025 Tienda de Música. Todos los derechos reservados.
   </footer>
-
 </body>
 </html>
