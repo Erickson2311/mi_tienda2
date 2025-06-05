@@ -1,33 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Contacto</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto - Tienda de Música</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="Logo" class="logo">
+    <img src="images/logo.png" alt="Logo" class="logo" />
+    <nav>
+      <a href="index.html" class="nav-btn">Inicio</a>
+      <a href="tienda.html" class="nav-btn">Tienda</a>
+      <a href="contacto.html" class="nav-btn">Contacto</a>
+    </nav>
     <div class="social-icons">
       <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://wa.me/XXXXXXXXXX" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
       <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
   </header>
 
   <main>
-    <div class="container">
+    <div class="container contacto">
       <h1>Contacto</h1>
-      <p>Para más información escríbenos a:</p>
-      <p><strong>Email:</strong> info@mitienda.com</p>
-      <p><strong>Teléfono:</strong> +57 300 000 0000</p>
-      <p><strong>Dirección:</strong> Calle 123, Ciudad Musical, Colombia</p>
+      <p>
+        Puedes comunicarte con nosotros a través del siguiente correo o redes
+        sociales.
+      </p>
+
+      <ul>
+        <li><strong>Email:</strong> contacto@tiendademusica.com</li>
+        <li><strong>Teléfono/WhatsApp:</strong> +57 300 123 4567</li>
+        <li>
+          <strong>Redes sociales:</strong>
+          <a href="https://facebook.com" target="_blank">Facebook</a> |
+          <a href="https://instagram.com" target="_blank">Instagram</a>
+        </li>
+      </ul>
+
+      <h2>Formulario de contacto</h2>
+      <form id="contact-form" action="#" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit" class="btn-submit">Enviar</button>
+      </form>
     </div>
   </main>
 
   <footer>
-    &copy; 2025 Mi Tienda. Todos los derechos reservados.
+    &copy; 2025 Tienda de Música. Todos los derechos reservados.
   </footer>
+
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Gracias por contactarnos. Te responderemos pronto.");
+      this.reset();
+    });
+  </script>
 </body>
 </html>
