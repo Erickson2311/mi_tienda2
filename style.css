@@ -1,154 +1,185 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset básico */
+* {
   margin: 0;
-  background: url('background.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #fff;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Body y fuente */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Encabezado */
 header {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #282c34;
+  color: white;
+  padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  position: sticky;
-  top: 0;
 }
 
-header .logo-title {
-  display: flex;
-  align-items: center;
-}
-
-.logo-small {
-  height: 40px;
-  margin-right: 10px;
+header h1 {
+  font-size: 1.8rem;
 }
 
 nav a {
-  color: #fff;
-  margin: 0 10px;
+  color: white;
+  margin-left: 15px;
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #61dafb;
+}
+
+/* Main */
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Botón DOFA */
+.btn-dofa {
+  display: inline-block;
+  background-color: #61dafb;
+  color: #282c34;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-dofa:hover {
+  background-color: #21a1f1;
+  color: white;
+}
+
+/* Formulario contacto */
+form {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
   font-weight: bold;
 }
 
-.social-icons img {
-  height: 25px;
-  margin-left: 10px;
+form input[type="text"],
+form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
 }
 
-main {
-  padding: 20px;
-  background-color: rgba(0,0,0,0.5);
-  border-radius: 10px;
-  max-width: 800px;
-  margin: 20px auto;
+form textarea {
+  resize: vertical;
+  min-height: 80px;
 }
 
-.intro, .productos, .contacto {
-  text-align: center;
-}
-.intro {
-  background: 
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('clases-instrumentos.jpg') no-repeat center center;
-  background-size: cover;
-  padding: 40px;
-  border-radius: 10px;
-  text-align: center;
-  color: #fff;
+form button {
+  width: 120px;
+  padding: 10px;
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 
+form button:hover {
+  background-color: #21a1f1;
+  color: white;
+}
+
+/* Productos */
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
 
 .producto {
-  background: rgba(255,255,255,0.1);
+  background: #fafafa;
   padding: 15px;
-  border-radius: 10px;
-  margin: 10px 0;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
 .producto img {
-  max-width: 200px;
-  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
 }
 
+.producto h3 {
+  margin-bottom: 8px;
+}
+
+.producto span {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Botones de compra */
 .botones-compra {
-  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .btn-compra {
-  display: inline-block;
   padding: 8px 15px;
-  margin: 5px;
   border-radius: 5px;
+  color: white;
   text-decoration: none;
-  font-weight: bold;
-  color: #fff;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 
 .btn-compra.whatsapp {
-  background-color: #25d366;
+  background-color: #25D366;
+}
+
+.btn-compra.whatsapp:hover {
+  background-color: #1ebe5d;
 }
 
 .btn-compra.mercadopago {
   background-color: #009ee3;
 }
 
-.btn-dofa {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: orange;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+.btn-compra.mercadopago:hover {
+  background-color: #0077b5;
 }
 
-#logo-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  animation: fadeOut 4s forwards;
-}
-
-#logo-container img {
-  max-width: 200px;
-}
-
-@keyframes fadeOut {
-  0% { opacity: 1; }
-  90% { opacity: 1; }
-  100% { opacity: 0; visibility: hidden; }
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-form input, form textarea {
-  width: 80%;
-  margin: 5px 0;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-}
-
-form button {
-  background-color: orange;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #282c34;
+  color: white;
+  margin-top: 30px;
 }
