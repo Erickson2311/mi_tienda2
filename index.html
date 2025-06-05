@@ -2,71 +2,50 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Inicio - Tienda de Música</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MusicaTeach</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
 </head>
 <body>
-  <!-- Intro animado -->
-  <div id="intro">
-    <img src="images/logo.png" alt="Logo" />
+  <!-- Animación de logo -->
+  <div id="logo-container">
+    <img src="logo.png" alt="MusicaTeach Logo" />
   </div>
 
-  <!-- Header con logo y redes -->
+  <!-- Encabezado fijo -->
   <header>
-    <img src="images/logo.png" alt="Logo" class="logo" />
+    <div class="logo-title">
+      <img src="logo.png" alt="MusicaTeach Logo" class="logo-small" />
+      <h1>MusicaTeach</h1>
+    </div>
     <nav>
-      <a href="index.html" class="nav-btn">Inicio</a>
-      <a href="tienda.html" class="nav-btn">Tienda</a>
-      <a href="contacto.html" class="nav-btn">Contacto</a>
+      <a href="index.html">Inicio</a>
+      <a href="tienda.html">Tienda</a>
+      <a href="contacto.html">Contacto</a>
     </nav>
     <div class="social-icons">
-      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
+      <a href="#"><img src="whatsapp-icon.png" alt="WhatsApp" /></a>
+      <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
     </div>
   </header>
 
   <!-- Contenido principal -->
   <main>
-    <div class="container">
-      <h1>Bienvenidos a Nuestra Tienda de Instrumentos Musicales</h1>
-      <p>
-        Ofrecemos enseñanza personalizada de guitarra, piano y violín. Aprende
-        con expertos y mejora tu talento musical.
-      </p>
-
-      <section class="imagenes-inicio">
-        <img src="images/guitarra.jpg" alt="Guitarra" />
-        <img src="images/piano.jpg" alt="Piano" />
-        <img src="images/violin.jpg" alt="Violín" />
-      </section>
-
-      <section class="integrantes">
-        <h2>Integrantes del grupo</h2>
+    <section class="intro">
+      <h2>Bienvenidos a MusicaTeach</h2>
+      <p>Ofrecemos enseñanza de instrumentos musicales adaptada a tu ritmo y nivel. ¡Aprende guitarra, piano y batería de forma divertida y profesional!</p>
+      <div class="integrantes">
+        <h3>Integrantes:</h3>
         <ul>
-          <li>Erickson Acosta</li>
-          <li>Yenli Gómez</li>
-          <li>Otro Integrante</li>
+          <li>Juan Pérez</li>
+          <li>María López</li>
+          <li>Carlos García</li>
         </ul>
-      </section>
-
-      <a
-        href="matriz_do.fa.html"
-        target="_blank"
-        class="boton-do.fa"
-        >Matriz DOFA</a
-      >
-    </div>
+      </div>
+      <a href="matriz_dofa.html" class="btn-dofa">Ver Matriz DOFA</a>
+    </section>
   </main>
-
-  <footer>
-    &copy; 2025 Tienda de Música. Todos los derechos reservados.
-  </footer>
 </body>
 </html>
